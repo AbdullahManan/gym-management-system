@@ -11,8 +11,6 @@ A full-stack gym management application built with ASP.NET Core and React. Manag
 
 - **Members** — Add, edit, and delete gym members
 - **Memberships** — Assign membership plans (type, price, start/end dates) to members
-- **Check-ins** — Log member attendance with automatic timestamp
-- **Active membership validation** — Members can only check in if their membership is currently active
 - **Persistent storage** — All data stored in SQL Server via Entity Framework Core
 - **Single-command deployment** — React frontend served directly by ASP.NET Core
 
