@@ -1,0 +1,20 @@
+:root {
+  --bg-dark: #f5f5f5;
+  --bg-panel: #ffffff;
+  --bg-sidebar: #ffffff;
+  --text-main: #111111;
+  --text-muted: #888888;
+  --accent: #4f46e5;
+  --accent-btn:  #FAFA33;
+  --accent-btn-border: #000000;
+  --border: #141414;
+  --danger: #e53935;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-size: 20px;
+  line-height: 1.5;
+}
