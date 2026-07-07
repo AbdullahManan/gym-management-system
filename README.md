@@ -41,7 +41,6 @@ gym-management-system/
       App.jsx       Layout and navigation
       Members.jsx   Members page
       Memberships.jsx  Memberships page
-      CheckIns.jsx  Check-ins page
 ```
 
 ---
@@ -115,14 +114,8 @@ Visit `http://localhost:5041` — the full app runs from a single command.
 | PUT | /memberships/{id} | Update a membership |
 | DELETE | /memberships/{id} | Delete a membership |
 | GET | /members/{id}/membership | Get a member's membership |
-| GET | /members/{id}/membership/isactive | Check if membership is active |
 
-### Check-ins
-| Method | Endpoint | Description |
-|---|---|---|
-| GET | /checkins | Get all check-ins |
-| GET | /members/{id}/checkins | Get check-ins for a member |
-| POST | /members/{id}/checkins | Log a check-in (validates active membership) |
+
 
 ---
 
@@ -131,7 +124,6 @@ Visit `http://localhost:5041` — the full app runs from a single command.
 - **Minimal API** — chose ASP.NET Core Minimal API over MVC for cleaner, less boilerplate code
 - **EF Core** — used an ORM to keep C# code readable and database-agnostic
 - **DateOnly** — used C#'s `DateOnly` type for membership dates instead of `DateTime` since time component is irrelevant
-- **Active membership check** — check-in endpoint validates membership exists and is currently active before logging attendance
 - **Single-origin deployment** — React app is built into `wwwroot` and served by ASP.NET, eliminating CORS in production
 
 ---
