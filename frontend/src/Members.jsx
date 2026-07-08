@@ -5,6 +5,7 @@ function Members() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [editingId, setEditingId] = useState(null);
+  const [search, setSearch] = useState("");
     
 
   useEffect(() => {
@@ -73,11 +74,25 @@ function Members() {
     setEmail(member.email);
   }
 
+  const filteredMembers = members.filter(m =>
+    m.name.toLowerCase().includes(search.toLowerCase()) || m.email.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
   <div>
     <div className="page-header">
       <p className="page-eyebrow">Gym Management</p>
       <h1 className="page-title">Members</h1>
+    </div>
+
+    <div className ="search-bar">
+      <label>Search Members</label> 
+      <input
+        type="text"
+        
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
     </div>
 
     <div className="card">
@@ -91,7 +106,7 @@ function Members() {
           </tr>
         </thead>
         <tbody>
-          {members.map(m => (
+          {filteredMembers.map(m => (
             <tr key={m.id}>
               <td>{m.id}</td>
               <td>{m.name}</td>

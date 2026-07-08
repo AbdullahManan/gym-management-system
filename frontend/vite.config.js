@@ -4,7 +4,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: '../../LEARNING ASPNET SUMMER SERIOUS/GymManagementSystem/wwwroot',
+    outDir: '../backend/wwwroot',
     emptyOutDir: true
   }
 })
