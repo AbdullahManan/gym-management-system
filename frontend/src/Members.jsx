@@ -81,7 +81,7 @@ function Members() {
   return (
   <div>
     <div className="page-header">
-      <p className="page-eyebrow">Gym Management</p>
+      
       <h1 className="page-title">Members</h1>
     </div>
 
