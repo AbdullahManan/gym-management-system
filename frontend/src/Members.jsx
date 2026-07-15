@@ -86,10 +86,9 @@ function Members() {
     </div>
 
     <div className ="search-bar">
-      <label>Search Members</label> 
+      <label>Search Members</label> <br/>
       <input
         type="text"
-        
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
