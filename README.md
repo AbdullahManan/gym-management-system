@@ -1,9 +1,9 @@
 # Gym Management System
 
-A full-stack gym management application built with ASP.NET Core and Bootstrap 5. Manage members, memberships, and check-ins from a clean, modern dashboard.
+A full-stack gym management application built with ASP.NET Core and React. Manage members, memberships, and check-ins from a clean, modern dashboard.
 
 **Author:** Abdullah Manan  
-**Stack:** ASP.NET Core · Entity Framework Core · SQL Server · Bootstrap
+**Stack:** ASP.NET Core · Entity Framework Core · SQL Server · React . Vite
 
 ---
 
